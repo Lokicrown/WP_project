@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Nani's Pizza</title>
+<meta name="author" content="Nani's Pizza - Tiffany">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style>
+
+body {
+	background-color: #e6f5ff;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family:  "century gothic", monospace, verdana;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  border-radius: 5px;
+}
+
+
+.button {
+  background-color: #ffa366;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.input{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width: 80%;
+    color: black;
+    margin-top:10px;
+    font-size:1em;
+    border-radius:4px;
+ }
+
+.input1{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width: 80%;
+    height: 200px;
+    color: black;
+    margin-top:10px;
+    font-size:1em;
+    border-radius:4px;
+ }
+
+</style>
+</head>
+
+<div class="container">
+  <img src="img/pizza-salame2.jpeg"  alt="pizza-salame Background" style="width:100%;">
+  <div  style="font-size: 75px"  class="title">Contact Us</div>
+</div>
+<br>
+<br>
+
+
+<form action="ctu.cgi" method="post" >
+	<hr>
+<label for="fn">
+	<h2><b>First Name</b></h2>
+	</label>
+	<input type="text" id="fn" name="fn" class="input" placeholder="Your name.." required>
+<br><br>
+<label for="ln">
+	<h2><b>Last Name</b></h2>
+	</label>
+	<input type="text" id="ln" name="ln" class="input" placeholder="Your last name.." required>
+<br><br>
+<label for="email">
+	<h2><b>Email</b></h2>
+	</label>
+	<input type="text" id="email" name="email" class="input" placeholder="Your email.." required>
+<br><br>
+<label for="subject">
+	<h2><b>Subject</b></h2>
+	</label>
+	<textarea id="subject" name="subject" placeholder="Write something.." class="input1" required>
+</textarea>
+<br><br>
+<tr>
+<td>
+<input type="submit" class="button" value="Submit">
+<input type="reset" class="button" value="Clear All">
+<input class="button" target="_blank" href="">
+</td>
+</tr>
+
+</form>
+</body>
+</html>
+
+

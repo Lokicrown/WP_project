@@ -1,0 +1,211 @@
+/*main*/
+body {
+	background-color: #e6f5ff;
+}
+
+.button {
+  background-color: #ffa366;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button {
+  background-color: #ffa366;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  min-width: 190px;
+  border-radius: 5px;
+}
+.button1 {
+  background-color: #ffa366; 
+  color: black; 
+  border: 0px;
+}
+
+.button1:focus {
+  background-color: #ff6600;
+  color: white;
+}
+
+/* button 2*/
+.button2 {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*logo*/
+#logo{
+    width : 50%;
+    margin : 0 auto;
+    text-align: center;
+}
+#logo img{
+    width : 800px;
+    height : 20vh;
+}
+
+/*title with image background*/
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family:  "century gothic", monospace, verdana;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+}
+
+/* TEXT */
+
+h1 {
+    color: white;
+    padding: 75px;
+    font-family:  "century gothic", monospace, verdana;
+	font-weight: bold;
+    }
+	
+h2 {
+		font-family:century gothic, monospace, verdana; 
+		color:orange; 
+		font-size: 30px;
+}
+
+p { 
+	font-family:century gothic, monospace, verdana; 
+	color:black; 
+	font-size:smaller;
+}
+	
+p2 {
+	font-family:courier new, century gothic, monospace, verdana; 
+	color:orange; 
+	font-size: greater;
+	text-align:center;
+}
+
+/* toppings label font*/
+font {
+	font-family:century gothic, monospace, verdana; 
+	color:black; 
+	font-size:smaller;
+	font-family:century gothic, monospace, verdana;
+	text-align: center;
+	
+}
+	
+	
+/*------*/
+	
+
+
+*{box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  background-color: #e6f5ff;
+  display: table;
+  clear: both;
+}
+
+
+/* ORDER */
+img {
+  border-radius: 5px;
+}
+
+select {
+	width: 100px;
+	float: right;
+	vertical-align: bottom;
+	border:1px solid orange;
+	border-radius: 3px;
+}
+
+input[type="checkbox"][id^="t"] {
+  display: none;
+}
+
+label {
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+label::before {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked+label::before {
+  content: " ";
+  background-color: grey;
+  transform: scale(1);
+}
+
+:checked+label img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
+
